@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+*{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+}
+
+body{
+    background-color: #222630;
+    
+}
+
+/* Menu */
+.menu{
+    padding: 5px;
+    width: 700px;
+    display: block;
+    margin: 0 auto;
+}
+.menu h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    color: white;
+    float: left;
+}
+.menu a{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    color: white;
+    float: right;
+    margin-top: 33px;
+    transition: 250ms all;
+    text-decoration: none;
+}
+.menu a:hover{
+    color: cornflowerblue;
+    text-decoration: underline;
+}
+
+/* Music */
+.music{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+.music .flex{
+    display: flex;
+    justify-content: center;
+}
+.music i{
+    cursor: pointer;
+    padding: 7px;
+    box-shadow: 0px 0px 0px 1px #2d3340;
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+    transition: 250ms all;
+    font-size: 50px;
+}
+.music i:hover{
+    background-color: white;
+    color: black;
+}
+.music i:focus{
+    background-color: red;
+    color: white;
+    box-shadow: 0px 0px 0px 1px red;
+}
+
+/* Bottom Text */
+.bottom-text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 25px;
+}
+.bottom-text span{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    color: white;
+    display: block;
+    text-align: center;
+}
+.bottom-text #play-music{
+    background-color: #222630;
+    padding: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    color: white;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 30px;
+}
+.bottom-text #pause-music{
+    background-color: #222630;
+    padding: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    color: white;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 30px;
+}
+
+/* Responsive */
+@media screen and (max-width: 800px){
+    .menu{
+        width: 100%;
+        display: initial;
+        margin: 10px;
+    }
+}
